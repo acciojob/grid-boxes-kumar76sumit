@@ -1,47 +1,50 @@
 /*  your css code here. If applicable */
 #grid{
 	display:grid;
-	grid-template-areas:
+	grid-template-rows:124px 124px 124px 124px 124px;
+	grid-template-columns:242.5px 242.5px 242.5px 242.5px;
+	grid-gap:10px 10px;
+	/* grid-template-areas:
 		'a a a a'
 		'b c d d'
 		'b e e f'
 		'b g h i'
-		'b j j j';
+		'b j j j'; */
 }
 #grid>div{
 	background-color:#008001;
-	margin:2px;
+	/* margin:2px; */
 	color:white;
 	font-size: 20px;
-	padding:20px;
+	/* padding:20px; */
 }
 .one{
-	grid-area:a;
+	grid-column:span 4/auto;
 }
 .two{
-	grid-area:b;
+	grid-row:span 4/auto;
 }
 .three{
-	grid-area:c;
+	grid-column:span 1/auto;
 }
 .four{
-	grid-area:d;
+	grid-column:span 2/auto;
 }
 .five{
-	grid-area:e;
+	grid-column:span 2/auto;
 }
 .six{
-	grid-area:f;
+	grid-column:span 1/auto;
 }
 .seven{
-	grid-area:g;
+	grid-column:span 1/auto;
 }
 .eight{
-	grid-area:h;
+	grid-column:span 1/auto;
 }
 .nine{
-	grid-area:i;
+	grid-column:span 1/auto;
 }
 .ten{
-	grid-area:j;
+	grid-column:span 3/auto;
 }
