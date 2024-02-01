@@ -1,1 +1,47 @@
 /*  your css code here. If applicable */
+#grid{
+	display:grid;
+	grid-template-areas:
+		'a a a a'
+		'b c d d'
+		'b e e f'
+		'b g h i'
+		'b j j j';
+}
+#grid>div{
+	background-color:#008001;
+	margin:2px;
+	color:white;
+	font-size: 20px;
+	padding:20px;
+}
+.one{
+	grid-area:a;
+}
+.two{
+	grid-area:b;
+}
+.three{
+	grid-area:c;
+}
+.four{
+	grid-area:d;
+}
+.five{
+	grid-area:e;
+}
+.six{
+	grid-area:f;
+}
+.seven{
+	grid-area:g;
+}
+.eight{
+	grid-area:h;
+}
+.nine{
+	grid-area:i;
+}
+.ten{
+	grid-area:j;
+}
